@@ -16,6 +16,11 @@
 		5B0B72FE1E53459800923567 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B72FC1E53459800923567 /* MainViewController.xib */; };
 		5B0B73011E53471500923567 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B72FF1E53471500923567 /* PeripheralTableViewCell.swift */; };
 		5B0B73021E53471500923567 /* PeripheralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B73001E53471500923567 /* PeripheralTableViewCell.xib */; };
+		D770892A1E53FB7000594151 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77089281E53FB7000594151 /* PeripheralViewController.swift */; };
+		D770892B1E53FB7000594151 /* PeripheralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D77089291E53FB7000594151 /* PeripheralViewController.xib */; };
+		D770892D1E53FFAF00594151 /* BluetoothTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770892C1E53FFAF00594151 /* BluetoothTools.swift */; };
+		D77089301E543B7C00594151 /* CharacteristicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770892E1E543B7C00594151 /* CharacteristicTableViewCell.swift */; };
+		D77089311E543B7C00594151 /* CharacteristicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D770892F1E543B7C00594151 /* CharacteristicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		5B0B72FC1E53459800923567 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		5B0B72FF1E53471500923567 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
 		5B0B73001E53471500923567 /* PeripheralTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralTableViewCell.xib; sourceTree = "<group>"; };
+		D77089281E53FB7000594151 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		D77089291E53FB7000594151 /* PeripheralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralViewController.xib; sourceTree = "<group>"; };
+		D770892C1E53FFAF00594151 /* BluetoothTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothTools.swift; sourceTree = "<group>"; };
+		D770892E1E543B7C00594151 /* CharacteristicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicTableViewCell.swift; sourceTree = "<group>"; };
+		D770892F1E543B7C00594151 /* CharacteristicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacteristicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +74,17 @@
 			children = (
 				5B0B72E91E53406400923567 /* AppDelegate.swift */,
 				5B0B72EB1E53406400923567 /* ViewController.swift */,
+				D770892C1E53FFAF00594151 /* BluetoothTools.swift */,
 				5B0B72FF1E53471500923567 /* PeripheralTableViewCell.swift */,
 				5B0B73001E53471500923567 /* PeripheralTableViewCell.xib */,
 				5B0B72FB1E53459800923567 /* MainViewController.swift */,
 				5B0B72FC1E53459800923567 /* MainViewController.xib */,
-				5B0B72ED1E53406400923567 /* Main.storyboard */,
+				D77089281E53FB7000594151 /* PeripheralViewController.swift */,
+				D77089291E53FB7000594151 /* PeripheralViewController.xib */,
+				D770892E1E543B7C00594151 /* CharacteristicTableViewCell.swift */,
+				D770892F1E543B7C00594151 /* CharacteristicTableViewCell.xib */,
 				5B0B72F01E53406400923567 /* Assets.xcassets */,
+				5B0B72ED1E53406400923567 /* Main.storyboard */,
 				5B0B72F21E53406400923567 /* LaunchScreen.storyboard */,
 				5B0B72F51E53406400923567 /* Info.plist */,
 			);
@@ -138,9 +153,11 @@
 			files = (
 				5B0B72F41E53406400923567 /* LaunchScreen.storyboard in Resources */,
 				5B0B73021E53471500923567 /* PeripheralTableViewCell.xib in Resources */,
+				D770892B1E53FB7000594151 /* PeripheralViewController.xib in Resources */,
 				5B0B72F11E53406400923567 /* Assets.xcassets in Resources */,
 				5B0B72EF1E53406400923567 /* Main.storyboard in Resources */,
 				5B0B72FE1E53459800923567 /* MainViewController.xib in Resources */,
+				D77089311E543B7C00594151 /* CharacteristicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770892A1E53FB7000594151 /* PeripheralViewController.swift in Sources */,
 				5B0B72FD1E53459800923567 /* MainViewController.swift in Sources */,
 				5B0B72EC1E53406400923567 /* ViewController.swift in Sources */,
+				D77089301E543B7C00594151 /* CharacteristicTableViewCell.swift in Sources */,
 				5B0B72EA1E53406400923567 /* AppDelegate.swift in Sources */,
+				D770892D1E53FFAF00594151 /* BluetoothTools.swift in Sources */,
 				5B0B73011E53471500923567 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +340,7 @@
 				5B0B72FA1E53406400923567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
