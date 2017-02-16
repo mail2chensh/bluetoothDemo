@@ -13,6 +13,10 @@ import CoreBluetooth
 let K_CENTRAL_MANAGER_DID_DISCOVER_PERIPHERAL = "K_CENTRAL_MANAGER_DID_DISCOVER_PERIPHERAL"
 // 连接外设成功
 let K_CENTRAL_MANAGER_DID_CONNECT_PERIPHERAL = "K_CENTRAL_MANAGER_DID_CONNECT_PERIPHERAL"
+// 连接外设失败
+let K_CENTRAL_MANAGER_DID_FAIL_CONNECT_PERIPHERAL = "K_CENTRAL_MANAGER_DID_FAIL_CONNECT_PERIPHERAL"
+// 失去外设连接
+let K_CENTRAL_MANAGER_DID_DISCONNECT_PERIPHERAL = "K_CENTRAL_MANAGER_DID_DISCONNECT_PERIPHERAL"
 
 
 
@@ -140,11 +144,13 @@ class BluetoothTools: NSObject, CBCentralManagerDelegate {
     // 连接外设失败
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         print("========== 连接外设失败： \(peripheral.name), \(error)")
+        NotificationCenter.default.post(name: NSNotification.Name.init(K_CENTRAL_MANAGER_DID_FAIL_CONNECT_PERIPHERAL), object: peripheral)
     }
     
     // 丢失连接
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         print("========== 丢失连接： \(peripheral.name), \(error)")
+        NotificationCenter.default.post(name: NSNotification.Name.init(K_CENTRAL_MANAGER_DID_DISCONNECT_PERIPHERAL), object: peripheral)
     }
 
     
